@@ -9,9 +9,9 @@ type Document struct {
 	//body
 }
 
-func NewDocument(target interface{}) (doc *Document) {
+func NewDocument(docType DocumentType) (doc *Document) {
 	doc = &Document{
-		container: NewContainer(target),
+		container: NewContainer(docType),
 		xmlparts:  map[string]interface{}{},
 	}
 	return

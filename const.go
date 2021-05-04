@@ -35,24 +35,6 @@ const (
 )
 
 var (
-	ODF_TEMPLATES = map[string]string{
-		"text":         "text.ott",
-		"texte":        "text.ott",
-		"spreadsheet":  "spreadsheet.ots",
-		"tableur":      "spreadsheet.ots",
-		"presentation": "presentation.otp",
-		// Follow the spec
-		"drawing": "drawing.otg",
-		// Follow the mimetype
-		"graphics": "drawing.otg",
-		"graphic":  "drawing.otg",
-		// TODO
-		// 'chart': 'templates/chart.otc',
-		// 'image': 'templates/image.oti',
-		// 'formula': 'templates/image.otf',
-		// 'master': 'templates/image.odm',
-		//'web': 'templates/image.oth',
-	}
 
 	// File extensions and their mimetype
 	ODF_EXTENSIONS = map[string]string{

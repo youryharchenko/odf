@@ -5,14 +5,14 @@ type Document struct {
 
 	// private
 	container *Container
-	xmlparts  map[string]interface{}
+	//xmlparts  map[string]interface{}
 	//body
 }
 
 func NewDocument(docType DocumentType) (doc *Document) {
 	doc = &Document{
 		container: NewContainer(docType),
-		xmlparts:  map[string]interface{}{},
+		//xmlparts:  map[string]interface{}{},
 	}
 	return
 }
